@@ -1,4 +1,30 @@
-## Welcome to GitHub Pages
+<link rel="stylesheet" href="./style.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(() => {
+    alert("ready");
+  })
+</script>
+
+
+## Markov Chain Generator
+This tool is a somewhat simple way to generate a markov chain with sample output.
+
+Simply enter sample data with which to generate the markov chain, and press the generate button below.
+<textarea id="chainInput"></textarea>
+<div class="center">
+    <label for="separatorChar">Separator</label>
+    <select id="separatorChar">
+        <option value="nl">New line</option>
+        <option value=" ">Space</option>
+        <option value="|">|</option>
+        <option value=",">,</option>
+    </select>
+    <br>
+    <button id="generateButton">Generate</button>
+</div>
+
+<!-- ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Unarekin/markov-generator/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -34,4 +60,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out. -->
