@@ -1,0 +1,23 @@
+{
+  "name": "markov-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unarekin/markov-generator.git"
+  },
+  "keywords": [],
+  "author": "Erica Phelps <erica@blackspork.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Unarekin/markov-generator/issues"
+  },
+  "homepage": "https://github.com/Unarekin/markov-generator#readme"
+}
