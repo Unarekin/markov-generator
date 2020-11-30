@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha ./test/*.ts"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,24 @@
   "bugs": {
     "url": "https://github.com/Unarekin/markov-generator/issues"
   },
-  "homepage": "https://github.com/Unarekin/markov-generator#readme"
+  "homepage": "https://github.com/Unarekin/markov-generator#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^14.14.10",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  },
+  "mocha": {
+    "require": [
+      "source-map-support/register",
+      "ts-node/register"
+    ],
+    "full-trace": true,
+    "reporter": "mochawesome",
+    "reporter-options": "reportFilename=report,reportTitle=Markov Generator Tests,reportPageTitle=Markov Generator Tests,reportDir=./test/reports"
+  }
 }
