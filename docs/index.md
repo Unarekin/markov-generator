@@ -8,7 +8,8 @@
 This tool is a somewhat simple way to generate a markov chain with sample output.
 Simply enter sample data with which to generate the markov chain, and press the generate button below.
 The library expects data to be provided in the form of a series of phrases, one on each line, with individual words separated by spaces.
-<label for="quantity"><input type="number" id="quantity" name="quantity" value="5"></label>
+
+<label for="quantity">*Quantity:*J</label><input type="number" id="quantity" name="quantity" value="5">
 <textarea id="chainInput"></textarea>
 <div class="center">
     <button id="generateButton">Generate</button>
