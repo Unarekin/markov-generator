@@ -14,12 +14,6 @@
 This tool is a somewhat simple way to generate a markov chain with sample output.
 Simply enter sample data with which to generate the markov chain, and press the generate button below.
 The library expects data to be provided in the form of a series of phrases, one on each line, with individual words separated by spaces.
-<select id="separatorChar">
-    <option value="nl">New line</option>
-    <option value=" ">Space</option>
-    <option value="|">|</option>
-    <option value=",">,</option>
-</select>
 <textarea id="chainInput"></textarea>
 <div class="center">
     <button id="generateButton">Generate</button>
