@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/Unarekin/markov-generator/master/dist/index.min.js"></script>
+<script type="text/javascript" src="scripts/generator.min.js"></script>
 <script type="text/javascript">
   $(document).ready(() => {
     $("#generateButton").click(() => {
