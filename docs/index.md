@@ -14,7 +14,8 @@
 This tool is a somewhat simple way to generate a markov chain with sample output.
 
 Simply enter sample data with which to generate the markov chain, and press the generate button below.
-> <label for="separatorChar">Separator:</label>
+
+<label for="separatorChar">**Separator:**</label>
 <select id="separatorChar">
     <option value="nl">New line</option>
     <option value=" ">Space</option>
