@@ -4,8 +4,8 @@
 <script type="text/javascript">
   $(document).ready(() => {
     $("#generateButton").click(() => {
-      // let generator = new MarkovGenerator($("#generateButton").value)
-      console.log($("#generateButton").value);
+      // let generator = new MarkovGenerator($("#generateButton").val())
+      console.log($(this).val());
     });
   });
 </script>
