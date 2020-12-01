@@ -1,4 +1,5 @@
 window.MarkovGenerator = require('./generator.min.js');
+console.log("Genny: ", window.MarkovGenerator);
 
 $(document).ready(() => {
   $("#generateButton").click(function () {
