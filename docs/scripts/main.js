@@ -9,7 +9,7 @@ $(document).ready(() => {
     let generator = new MarkovGenerator(phrases);
     let generated = generator.generate(qty)
 
-    let html = "<ul>" + generated.map((phrase) => "<li>" + phrase + "</li>").join("\n") + "</ul>";
+    let html = "<ol>" + generated.map((phrase) => "<li>" + phrase + "</li>").join("\n") + "</ol>";
     $("#output").html(html);
     // $("#output").()
 
