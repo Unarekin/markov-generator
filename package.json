@@ -11,7 +11,7 @@
     "build": "npx tsc -p ./tsconfig.json",
     "minify": "npx minify dist/index.js > dist/index.min.js",
     "clean": "npx rimraf dist",
-    "browserify": "npx browserify dist/index.min.js --standalone MarkovGenerator -o docs/scripts/generator.min.js",
+    "browserify": "npx browserify dist/index.js --standalone MarkovGenerator -o docs/scripts/generator.js",
     "cleanbuild": "npm run clean && npm run build && npm run minify && npm run browserify"
   },
   "repository": {
