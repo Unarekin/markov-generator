@@ -80,3 +80,6 @@ export class MarkovGenerator {
   }
 
 }
+
+if (module)
+  module.exports = MarkovGenerator;

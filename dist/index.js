@@ -71,4 +71,6 @@ var MarkovGenerator = /** @class */ (function () {
     return MarkovGenerator;
 }());
 exports.MarkovGenerator = MarkovGenerator;
+if (module)
+    module.exports = MarkovGenerator;
 //# sourceMappingURL=index.js.map
