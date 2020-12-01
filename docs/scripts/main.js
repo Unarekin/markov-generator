@@ -1,3 +1,5 @@
+window.MarkovGenerator = require('./generator.min.js');
+
 $(document).ready(() => {
   $("#generateButton").click(function () {
     // let generator = new MarkovGenerator($("#generateButton").val())
