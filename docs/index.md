@@ -5,7 +5,8 @@
   $(document).ready(() => {
     $("#generateButton").click(function() {
       // let generator = new MarkovGenerator($("#generateButton").val())
-      console.log($(this).val());
+      let text = $("#chainInput").val();
+      console.log(text);
     });
   });
 </script>
