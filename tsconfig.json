@@ -11,7 +11,7 @@
     "allowJs": true,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDir": ".",
+    "rootDir": "src",
     "noImplicitUseStrict": true,
     "noImplicitReturns": true,
     "noImplicitThis": false,
@@ -20,7 +20,7 @@
     "allowSyntheticDefaultImports": true,
   },
   "include": [
-    "./src/index.ts"
+    "./src"
   ],
   "exclude": [
     "node_modules",

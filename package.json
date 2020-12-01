@@ -2,12 +2,16 @@
   "name": "markov-generator",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/index.min.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "npx mocha ./test/*.ts"
+    "test": "npx mocha ./test/*.ts",
+    "build": "npx tsc -p ./tsconfig.json",
+    "minify": "npx minify dist/index.js > dist/index.min.js",
+    "clean": "npx rimraf dist",
+    "cleanbuild": "npm run clean && npm run build && npm run minify"
   },
   "repository": {
     "type": "git",
@@ -25,6 +29,7 @@
     "@types/mocha": "^8.0.4",
     "@types/node": "^14.14.10",
     "chai": "^4.2.0",
+    "minify": "^6.0.1",
     "mocha": "^8.2.1",
     "mochawesome": "^6.2.1",
     "ts-node": "^9.0.0",
