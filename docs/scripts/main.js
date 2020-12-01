@@ -4,7 +4,7 @@ $(document).ready(() => {
     let text = $("#chainInput").val();
     let qty = $("#quantity").val();
 
-    let generator = new MarkovGenerator(text);
+    let generator = new MarkovGenerator(text).split(/\r?\n/).filter((phrase) => phrase.length)
     let generated = generator.generate(qty)
 
     console.log(generated);
