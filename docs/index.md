@@ -3,7 +3,7 @@
 <script type="text/javascript" src="scripts/generator.min.js"></script>
 <script type="text/javascript">
   $(document).ready(() => {
-    $("#generateButton").click(() => {
+    $("#generateButton").click(function() {
       // let generator = new MarkovGenerator($("#generateButton").val())
       console.log($(this).val());
     });
