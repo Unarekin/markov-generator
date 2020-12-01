@@ -1,0 +1,47 @@
+{
+  "name": "markov-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.min.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "npx mocha ./test/*.ts",
+    "build": "npx tsc -p ./tsconfig.json",
+    "minify": "npx minify dist/index.js > dist/index.min.js",
+    "clean": "npx rimraf dist",
+    "cleanbuild": "npm run clean && npm run build && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unarekin/markov-generator.git"
+  },
+  "keywords": [],
+  "author": "Erica Phelps <erica@blackspork.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Unarekin/markov-generator/issues"
+  },
+  "homepage": "https://github.com/Unarekin/markov-generator#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^14.14.10",
+    "chai": "^4.2.0",
+    "minify": "^6.0.1",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  },
+  "mocha": {
+    "require": [
+      "source-map-support/register",
+      "ts-node/register"
+    ],
+    "full-trace": true,
+    "reporter": "mochawesome",
+    "reporter-options": "reportFilename=report,reportTitle=Markov Generator Tests,reportPageTitle=Markov Generator Tests,reportDir=./test/reports"
+  }
+}
