@@ -5,12 +5,13 @@ $(document).ready(() => {
     let qty = $("#quantity").val();
 
     let phrases = text.split(/\r?\n/).filter((phrase) => phrase.length);
-    console.log("Phrases:", phrases);
 
     let generator = new MarkovGenerator(phrases);
     let generated = generator.generate(qty)
 
-    console.log(generated);
+    let html = "<ul>" + generated.map((phrase) => "<li>" + phrase + "</li>").join("\n") + "</ul>";
+    $("#output").html(html);
+    // $("#output").()
 
   });
 });

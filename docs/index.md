@@ -14,3 +14,4 @@ The library expects data to be provided in the form of a series of phrases, one 
 <div class="center">
     <button id="generateButton">Generate</button>
 </div>
+<div id="output"></div>
