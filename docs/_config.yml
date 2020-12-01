@@ -1,1 +1,5 @@
+languageCode: en
+title: Markov Chain Generator
 theme: jekyll-theme-dinky
+
+publicDir: docs
